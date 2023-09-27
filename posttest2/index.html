@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Eyelash.Beauty</title>
+</head>
+<body>
+    <header>
+        <h1>Eyelash.Beauty</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#" onclick="loadAboutEyelash()">Tentang Eyelash</a></li>
+            <li><a href="#">Produk</a></li>
+            <li><a href="#" onclick="loadContact()">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="beranda">
+            <h2>Selamat Datang di Eyelash.Beauty</h2>
+        </section>
+        
+
+        <section class="tentang" id="tentang-eyelash">
+        </section>
+
+        <section class="produk">
+            <h2>Type Eyelash</h2>
+            <div class="produk-item">
+                <img src="type classic.jpeg" alt="Classic">
+                <h3>Eyelash Type Classic</h3>
+                <p>Harga: 100.000</p>
+                <button>Booking Now</button>
+            </div>
+            <div class="produk-item">
+                <img src="type volume.jpeg" alt="Volume">
+                <h3>Eyelash Type Volume</h3>
+                <p>Harga: 150.000</p>
+                <button>Booking Now</button>
+            </div>
+        </section>
+        
+
+        <section class="kontak" id="kontak">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2022 Eyelash.Beauty </p>
+    </footer>
+
+    <script>
+        function loadAboutEyelash() {
+            const tentangEyelashSection = document.querySelector(".tentang");
+            tentangEyelashSection.innerHTML = `
+                <h2>Tentang Eyelash</h2>
+                <p>Secara sederhana, eyelash extension atau bulu mata ekstensi adalah bulu mata yang disambung dengan bulu mata asli. Bahan utama yang dipakai adalah bulu mata buatan, disambung dengan hati-hati dengan bulu mata asli sehingga terlihat lebih tebal, panjang, dan lentik secara alami. Proses eyelash extension sendiri memakan waktu kurang lebih 2 jam,  tergantung keterampilan teknik memasang dan kualitas dari lem extension yang digunakan. Berbeda dari bulu mata palsu yang bersifat sekali pakai lalu setelahnya harus dibuang, hasil sambung bulu mata dengan teknik dan perawatan yang tepat dapat bertahan hingga 3 bulan. Di sini Anda dapat menemukan berbagai macam eyelash yang kami tawarkan:</p>
+                <ul>
+                    <li><a href="#eyelash-model-1">Eyelash Model Classic</a></li>
+                    <li><a href="#eyelash-model-2">Eyelash Model Volume</a></li>
+                    <!-- Tambahkan lebih banyak jenis eyelash dengan tautan ke bagian yang sesuai -->
+                </ul>
+            `;
+        }
+
+        function loadContact() {
+            const kontakSection = document.querySelector(".kontak");
+            kontakSection.innerHTML = `
+                <h2>Kontak</h2>
+                <p>Untuk booking dan ingin bertanya mengenai lash, dapat menghubungi kontak dibawah ini :</p>
+                <ul>
+                    <li>Email: <a href="mailto:lenggo.geni0305@gmail.com">lenggo.geni0305@gmail.com</a></li>
+                    <li>Instagram: <a href="https://www.instagram.com/eyelash.beauty">eyelash.beauty</a></li>
+                    <li>Facebook: <a href="https://www.facebook.com/eyelash.beauty">eyelash.beauty</a></li>
+                    <!-- Tambahkan tautan sosial media atau informasi kontak lainnya di sini -->
+                </ul>
+            `;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" id="theme-style">
+    <title>Eyelash.Beauty</title>
+</head>
+<body>
+    <header>
+        <h1>Eyelash.Beauty</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#" onclick="loadAboutEyelash()">Tentang Saya</a></li>
+            <li><a href="#">Produk</a></li>
+            <li><a href="#" onclick="loadContact()">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="beranda">
+            <h2>Selamat Datang di Eyelash.Beauty</h2>
+        </section>
+        
+
+        <section class="tentang" id="tentang-saya">
+        </section>
+
+        <section class="produk">
+            <h2>Type Eyelash</h2>
+            <div class="produk-item">
+                <img src="type classic.jpeg" alt="Classic">
+                <h3>Eyelash Type Classic</h3>
+                <p>Harga: 100.000</p>
+                <button>Booking Now</button>
+            </div>
+            <div class="produk-item">
+                <img src="type volume.jpeg" alt="Volume">
+                <h3>Eyelash Type Volume</h3>
+                <p>Harga: 150.000</p>
+                <button>Booking Now</button>
+            </div>
+        </section>
+        
+
+        <section class="kontak" id="kontak">
+        </section>
+    </main>
+
+        <button id="theme-toggle">Ganti Mode</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2022 Eyelash.Beauty </p>
+    </footer>
+
+    <script>
+        function loadAboutEyelash() {
+            const tentangEyelashSection = document.querySelector(".tentang");
+            tentangEyelashSection.innerHTML = `
+                <h2>Tentang Saya</h2>
+                <p>  Nama saya Siti Putri Lenggo Geni, dengan NIM 2209106120, dari Informatika C angkatan 22. Saya lahir dan bertempat tinggal di Samarinda. Saya lulusan SMAN 5 Samarinda. Berikut ini type eyelash yang tersedia pada toko saya:</p>
+                <ul>
+                    <li><a href="#eyelash-model-1">Eyelash Model Classic</a></li>
+                    <li><a href="#eyelash-model-2">Eyelash Model Volume</a></li>
+                    <!-- Tambahkan lebih banyak jenis eyelash dengan tautan ke bagian yang sesuai -->
+                </ul>
+            `;
+        }
+
+        function loadContact() {
+            const kontakSection = document.querySelector(".kontak");
+            kontakSection.innerHTML = `
+                <h2>Kontak</h2>
+                <p>Untuk booking dan ingin bertanya mengenai lash, dapat menghubungi kontak dibawah ini :</p>
+                <ul>
+                    <li>Email: <a href="mailto:lenggo.geni0305@gmail.com">lenggo.geni0305@gmail.com</a></li>
+                    <li>Instagram: <a href="https://www.instagram.com/eyelash.beauty">eyelash.beauty</a></li>
+                    <li>Facebook: <a href="https://www.facebook.com/eyelash.beauty">eyelash.beauty</a></li>
+                    <!-- Tambahkan tautan sosial media atau informasi kontak lainnya di sini -->
+                </ul>
+            `;
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

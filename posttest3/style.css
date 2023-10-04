@@ -1,0 +1,122 @@
+/* Reset CSS */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling Header */
+header {
+    background-color: #f0afd6;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+/* Styling Navbar */
+nav {
+    background-color: #a87292;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Styling Main Content */
+main {
+    margin: 20px;
+    color: #c72084;
+}
+
+/* Styling Produk */
+.produk {
+    text-align: center;
+}
+
+.produk h2 {
+    font-size: 24px;
+}
+
+.produk-item {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+}
+
+.produk-item img {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #e791b5;
+    border-radius: 10px;
+}
+
+.produk-item h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.produk-item p {
+    font-size: 16px;
+    color: #cbc791;
+    margin-top: 5px;
+}
+
+button {
+    background-color: #e2d8d8;
+    color: #695858;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Styling Kontak */
+.kontak {
+    background-color: #f6cdeb;
+    padding: 20px;
+    text-align: center;
+}
+
+.kontak h2 {
+    font-size: 24px;
+}
+
+/* Styling Footer */
+footer {
+    background-color: #f0afd6;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Tema Light Mode */
+body.light-mode {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+/* Tema Dark Mode */
+body.dark-mode {
+    background-color: #333333;
+    color: #ffffff;
+}
+
